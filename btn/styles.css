@@ -1,0 +1,83 @@
+.kyu {
+    width: 60px; /* Adjust width */
+    height: 60px; /* Adjust height */
+    border-radius: 50%; /* Makes the button circular */
+    font-size: 24px; /* Font size for the content inside */
+    color: #fff;
+    background-color: #FCA311;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+}
+
+.kyu:hover {
+    background-color: #452d06;
+}
+
+#mainButton {
+    z-index: 10; /* Ensures the main button is on top of additional buttons */
+}
+
+#additionalButtons {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px; /* Adjust width of container */
+    height: 200px; /* Adjust height of container */
+    opacity: 0;
+    transform: scale(0.5); /* Starts scaled down */
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    pointer-events: none; /* Prevents interaction while hidden */
+}
+
+#additionalButtons.show {
+    opacity: 1;
+    transform: scale(1); /* Scales up to normal size */
+    pointer-events: auto; /* Enables interaction when visible */
+}
+
+.extra-button {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #FCA311;
+    color: #fff;
+    border: none;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+
+.extra-button img {
+    background-color: #FCA311;
+}
+
+.extra-button img:hover{
+    background-color: #3b2708;
+}
+
+.extra-button:hover {
+    background-color: #3b2708;
+}
+
+/* Position buttons in a circular layout */
+#additionalButtons.show .extra-button:nth-child(1) {
+    transform: translate(24px, -77px);
+}
+
+#additionalButtons.show .extra-button:nth-child(2) {
+    transform: translate(55px, -145px);
+}
+
+#additionalButtons.show .extra-button:nth-child(3) {
+    transform: translate(-46px, -19px);
+}

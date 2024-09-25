@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="btn/styles.css">
+    <style>
+        * {
+            background-color: #14213D;
+            color: aliceblue;
+        }
+
+        .nav-item:hover {
+            color: #FCA311
+        }
+
+        .navbar {
+            width: 100%;
+        }
+
+        .text-change {
+            color: #FCA311;
+        }
+
+        .home_btn:hover {
+            background-color: #FCA311;
+        }
+
+        .home_btn:hover span {
+            background-color: #FCA311;
+        }
+
+        .home_btn:hover img {
+            background-color: #FCA311;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row mb-5">
+            <nav class="fixed-top navbar navbar-expand-lg navbar-dark nav-transparent" id="navbar"
+                style="background-color: #14213D;">
+                <div class="container" style=" margin: auto;">
+                    <a class="navbar-brand fs-2 fw-bolder" href="#">
+                        Portfo<span class="" id="lio">lio</span>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                        <div class="ms-auto">
+                            <ul class="navbar-nav d-flex mb-2 mb-lg-0 d-grid gap-3 fs-5 ">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="#about">About</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="#skills">Skills</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="#projects">Projects</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="#contact">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <hr>
+
+        <section id="home">
+            <div class="row my-5 d-flex justify-content-around">
+                <div class="col-md-4 mt-2 mt-5 text-center">
+                    <div class="row mt-5">
+                        <div class="col fw-semibold fs-3 mt-3">
+                            Hello, My name is
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col fw-bold fs-1 mt-1">
+                            Akshay Kumar Yadav
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col fw-semibold fs-3 mt-1">
+                            And I'm <span class="text-change" id="element"></span>
+                        </div>
+                    </div>
+
+                    <div class="row d-flex justify-content-around mt-5">
+                        <div class="col-4">
+                            <a href="#" target="_blank" class="btn home_btn border border-2 rounded-4"
+                                style="border-color: #FCA311;"><span class="fw-semibold fs-4">Hire me</span></a>
+                        </div>
+                        <div class="col-5">
+                            <a href="#" target="_blank" class="btn home_btn border border-2 rounded-4"
+                                style="border-color: #FCA311;"><span class="fw-semibold fs-4">Resume</span><img
+                                    class="ms-2" src="download.svg" width="25%" alt="" srcset=""></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mt-md-2 mt-5">
+                    <img src="pg1.png" width="100%" alt="" srcset="">
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="row">
+                <div class="col text-center">
+                    <div class="row">
+                        <div class="col">
+                            <h2 class="fs-1 fw-bold">About me</h2>
+                        </div>
+                    </div>
+                    <div class="row d-flex justify-content-around">
+                        <div class="col-md-3 mt-5">
+                            <img class="rounded-circle" src="aluminium-structure.jpeg" width="120%" alt="">
+                        </div>
+                        <div class="col-md-6 mt-5">
+                            <div class="row">
+                                <div class="col">
+                                    <span class="fs-3 fw-bold">I'm Akshay And I'm <span class="text-change"
+                                            id="element1"></span></span>
+                                </div>
+                            </div>
+                            <div class="row mt-1">
+                                <div class="col">
+                                    <p class="fs-5">I'm web developers to design & develop creative websites that fits
+                                        their vision and attracts the visitors to stay for ever. Technologies and tools
+                                        that I use to create such awesome websites. And I'm Full Stack Java Developer.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row d-flex justify-content-around">
+                                <div class="col-4">
+                                    <img id="mainButton" class="kyu p-2" src="share.svg" alt="">
+                                    <div id="additionalButtons" class="hidden">
+                                        <a class="kyu extra-button"><img src="linkedin-svgrepo-com.svg" width="50%"
+                                                alt="" srcset=""></a>
+                                        <a class="kyu extra-button"><img src="github-142-svgrepo-com.svg" width="60%"
+                                                alt="" srcset=""></a>
+                                        <a class="kyu extra-button"><img src="instagram-svgrepo-com.svg" width="60%"
+                                                alt=""></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills">
+            <div class="row my-5 d-flex justify-content-around">
+                <div class="col text-center">
+                    <h2 class="fs-1 fw-bold">Skills</h2>
+                </div>
+            </div>
+            <div class="row border border-primary d-flex justify-content-around">
+                <div class="col-md-5">
+                    <p class="fs-2 fw-bolder text-change">My Creative Skill</p>
+                    <p>With expertise in custom software development, web and mobile app creation, and AI-driven
+                        solutions, I blend creativity with technical prowess. My experience spans diverse industries,
+                        delivering innovative and efficient solutions. From designing intuitive user interfaces to
+                        optimizing backend code, my goal is to bring your vision to life with precision and creativity
+                    </p>
+                </div>
+                <div class="col-md-5">
+                    <div class="row d-flex justify-content-between fs-5">
+                        <div class="col-md-1">
+                            <span>FRONTEND</span>
+                        </div>
+                        <div class="col-md-1">
+                            <span>70%</span>
+                        </div>
+                    </div>
+                    <div class="progress" style="height: 8px;">
+                        <div class="progress-bar" role="progressbar" aria-label="Basic example"
+                            style="width: 70%; background-color: #FCA311;" aria-valuenow="75" aria-valuemin="0"
+                            aria-valuemax="100"></div>
+                    </div>
+                    <div class="row d-flex justify-content-between fs-5 mt-3">
+                        <div class="col-md-1">
+                            <span>BACKEND</span>
+                        </div>
+                        <div class="col-md-1">
+                            <span>80%</span>
+                        </div>
+                    </div>
+                    <div class="progress" style="height: 8px;">
+                        <div class="progress-bar" role="progressbar" aria-label="Basic example"
+                            style="width: 80%; background-color: #FCA311;" aria-valuenow="75" aria-valuemin="0"
+                            aria-valuemax="100"></div>
+                    </div>
+                    <div class="row d-flex justify-content-between fs-5 mt-3">
+                        <div class="col-md-3">
+                            <span>FULL STACK</span>
+                        </div>
+                        <div class="col-md-1">
+                            <span>75%</span>
+                        </div>
+                    </div>
+                    <div class="progress" style="height: 8px;">
+                        <div class="progress-bar" role="progressbar" aria-label="Basic example"
+                            style="width: 75%; background-color: #FCA311;" aria-valuenow="75" aria-valuemin="0"
+                            aria-valuemax="100"></div>
+                    </div>
+                    <div class="row d-flex justify-content-between fs-5">
+                        <div class="col-md-1">
+                            <span>JAVA</span>
+                        </div>
+                        <div class="col-md-1">
+                            <span>80%</span>
+                        </div>
+                    </div>
+                    <div class="progress" style="height: 8px;">
+                        <div class="progress-bar" role="progressbar" aria-label="Basic example"
+                            style="width: 80%; background-color: #FCA311;" aria-valuenow="75" aria-valuemin="0"
+                            aria-valuemax="100"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="row">
+                <div class="col">
+                    <h1>Contect me</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <form action="/submit" method="post" id="con">
+                        <p>Name : <input type="text" name="name" id="name"></p>
+                        <p>email : <input type="email" name="email" id="email"></p>
+
+                        <button>Send</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="btn/script.js"></script>
+    <!-- <script type="module" src="contact.mjs"></script> -->
+
+    <!-- 
+     <script>
+        
+
+        const con = document.querySelector("#con");
+        const name1 = document.querySelector("#name");
+        const email = document.querySelector("#email");
+        const sub = document.querySelector("#sub");
+        const msg = document.querySelector("#msg");
+
+        con.addEventListener("submit", (e) => {
+            e.preventDefault();
+
+            
+
+            var file = new File(["foo"],data.txt)
+            console.log(file)
+            
+            console.log(name1.value);
+            console.log(email.value);
+            console.log(sub.value);
+            console.log(msg.value);
+            
+            console.log("ehllo");
+            // fs.write("data.txt", msg);
+
+
+
+        });
+
+
+    </script>  -->
+
+    <script>
+        const navbar = document.querySelector("#navbar");
+        const lio = document.querySelector("#lio");
+        window.addEventListener("scroll", (event) => {
+            if (window.scrollY > 200) {
+                lio.classList.add("text-change");
+                // navbar.classList.remove("nav-transparent1");
+                navbar.style.backgroundColor = "#000";
+            }
+            else {
+                // navbar.classList.add("nav-transparent1");
+                lio.classList.remove("text-change");
+                navbar.style.backgroundColor = "#14213D";
+            }
+        });
+
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'Java Developer', 'Web Developer'],
+            typeSpeed: 75,
+        });
+
+        var typed = new Typed('#element1', {
+            strings: ['Web Developer', 'Java Developer', 'Web Developer'],
+            typeSpeed: 75,
+        });
+
+
+
+    </script>
+</body>
+
+</html>
